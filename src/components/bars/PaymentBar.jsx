@@ -6,32 +6,34 @@ import { FaCcDiscover,
          FaCcAmex,
          FaCcPaypal,
          FaCcAmazonPay,
-         FaCcApplepay } from 'react-icons';
+         FaCcApplePay } from 'react-icons/fa';
 
 const PaymentBar = () => {
 
-  // pass the Icon Comoponent into PaymentIcon
-  // allow me to map over components & render
-
-  const iconArray = [
-    { id: 1, iconComponent: <FaCcDiscover/>, },
-    { id: 2, iconComponent: <FaCcVisa/>, },
-    { id: 3, iconComponent: <FaCcMastercard/>, },
-    { id: 4, iconComponent: <FaCcAmex/>, },
-    { id: 5, iconComponent: <FaCcPaypal/>, },
-    { id: 6, iconComponent: <FaCcAmazonPay/>, },
-    { id: 7, iconComponent: <FaCcApplepay/>, },
+  const iconComponentArray = [
+    { id: 1, component: <FaCcDiscover/>},
+    { id: 2, component: <FaCcVisa/>},
+    { id: 3, component: <FaCcMastercard/>},
+    { id: 4, component: <FaCcAmex/>},
+    { id: 5, component: <FaCcPaypal/>},
+    { id: 6, component: <FaCcAmazonPay/>},
+    { id: 7, component: <FaCcApplePay/>},
   ];
 
   return (
-    iconArray.map(icon => {
-      return (
-        <PaymentIcon
-          key={icon.id}
-          iconComponent={icon.iconComponent}
-        />
-      );
-    })
+    <aside 
+      className="flex flex-row"
+      style={{'border': 'red'}} >
+      {
+        iconComponentArray.map(icon => {
+          return (
+            <PaymentIcon id={icon.id}>
+              {icon.component}
+            </PaymentIcon>
+          );
+        })
+      }
+    </aside>
   );
 }
 

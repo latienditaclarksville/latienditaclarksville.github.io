@@ -1,11 +1,10 @@
 import React from 'react';
 
 const PaymentIcon = (props) => {
-  const { id, icon } = props;
-
+  const { id, children } = props;
   return (
-    <div>
-      {icon.iconComponent};
+    <div id={id}> 
+      {children} 
     </div>
   );
 }
