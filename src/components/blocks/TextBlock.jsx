@@ -1,8 +1,13 @@
 import React from 'react'
 
-const TextBlock = () => {
+const TextBlock = (props) => {
+  const { heading, body } = props;
+
   return (
-    <div>TextBlock</div>
+    <article className="flex flex-col">
+      <h2 className="font-bold">{heading}</h2>
+      <p className="font-light">{body}</p>
+    </article>
   );
 }
 
