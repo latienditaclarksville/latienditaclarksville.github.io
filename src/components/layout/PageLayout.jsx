@@ -13,12 +13,12 @@ const PageLayout = () => {
     <>
       <Navbar/>
       <Hero />
-      <AboutUs />
+      {/*<AboutUs />
       <Features />
       <PhotoGallery />
       <Faq />
       <Policy />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
