@@ -2,9 +2,8 @@ import React from 'react';
 
 const Copyright = () => {
   return (
-    <small>
-      &copy; {new Date().getFullYear()} - La Tiendita - Clarksville, TN
-    </small>
+      <p className='font-thin'><span className='font-normal'>La Tiendita. &copy;</span><br/>
+        Providing autnentic<br/><span className='underline underline-offset-2 decoration-rose-300'>Latino culture</span> since 2022.</p>
   );
 }
 

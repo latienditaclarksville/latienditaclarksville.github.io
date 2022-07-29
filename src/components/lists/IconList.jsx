@@ -7,18 +7,18 @@ import { BiPhoneOutgoing,
 const IconList = () => {
   return (
     <ul>
-      <li>
-        <BiPhoneOutgoing />
-        (931) 278-9303
+      <li className='flex flex-row justify-left align-center'>
+        <BiPhoneOutgoing size={24} className='my-auto'/>
+        <small className='pl-3 md:text-md lg:text-lg'>(931) 278-9303</small>
       </li>
-      <li>
-        <BiMailSend />
-        Franciscoh.2000@icloud.com
+      <li className='flex flex-row'>
+        <BiMailSend size={24} className='my-auto'/>
+        <small className='pl-3 md:text-md lg:text-lg'>Franciscoh.2000@icloud.com</small>
       </li>
-      <li>
-        <BiMapPin />
-        <p>3862 Trenton Rd Ste D</p>
-        <p>Clarksville, TN 37040</p>
+      <li className='flex flex-row'>
+        <BiMapPin size={24} className='my-auto'/>
+        <small className='pl-3 md:text-md lg:text-lg'>3862 Trenton Rd Ste. C<br/>
+        Clarksville, TN 37040</small>
       </li>
     </ul>
   );

@@ -11,16 +11,26 @@ const NavList = () => {
   ];
 
   return (
-    <ul>
-      {
-        navLinkTitles.map(link => {
-          const { linkTarget, linkText } = link;
-          return (
-            <Link to={linkTarget}>{linkText}</Link>
-          );
-        })
-      }
-    </ul>
+    <div>
+      <ul className='flex flex-col'>
+        {
+          navLinkTitles.map(link => {
+            const { linkTarget, linkText } = link;
+            return (
+              <Link to={linkTarget} 
+                    className='link 
+                               link-hover 
+                               sm:text-lg
+                               underline-offset-4
+                             decoration-rose-300
+                               '>
+                {linkText}
+              </Link>
+            );
+          })
+        }
+      </ul>
+    </div>
   );
 }
 
