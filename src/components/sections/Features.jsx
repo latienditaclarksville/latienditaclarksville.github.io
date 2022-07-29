@@ -1,6 +1,5 @@
 import React from 'react'
 import Grid from '../layout/Grid';
-import FeatureBlock from '../blocks/FeatureBlock';
 import MoneyTransferIcon from '../icons/MoneyTransferIcon';
 import { BiCheck,
          BiShoppingBag,
@@ -34,8 +33,6 @@ const featureBlockDataMap = new Map([
 ]);
 
 const contents = Array.from(featureBlockDataMap.values());
-console.log('Features Data:');
-console.log(contents);
 
 const Features = () => {
   return (

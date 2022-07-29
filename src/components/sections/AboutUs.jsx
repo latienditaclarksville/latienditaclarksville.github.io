@@ -4,14 +4,20 @@ import FamilySVG from '../../assets/illustrations/family.svg';
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-row">
-      <TextBlock 
+    <section className="border">
+      <div className='flex 
+                      flex-row 
+                      justify-between
+                      w-11/12
+                      mx-auto
+                      border
+                      border-emerald-300'>
+        <TextBlock 
         heading='About Us'
         body='Mother and Son.....'/>
-      <div>
-        <img src={FamilySVG} alt="A family eating dinner" />
+        <img src={FamilySVG} 
+             alt="A family eating dinner"/>
       </div>
-      <h1>Testing Tailwind</h1>
     </section>
   );
 }
