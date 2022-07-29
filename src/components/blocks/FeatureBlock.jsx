@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeatureBlock = (props) => {
   const { icon, heading, body, } = props;
-  console.log(icon);
+  
   return (
     <article className="flex 
                         flex-col

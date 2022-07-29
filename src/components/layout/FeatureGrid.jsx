@@ -2,9 +2,7 @@ import React from 'react'
 import FeatureBlock from '../blocks/FeatureBlock';
 
 const FeatureGrid = (props) => {
-  console.log('Reached Feature Grid');
-
-  const { numCols,
+ const { numCols,
           numRows, 
           gapX,
           gapY,
