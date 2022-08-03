@@ -4,22 +4,35 @@ const FeatureBlock = (props) => {
   const { icon, heading, body, } = props;
   
   return (
-    <article className="flex 
+    <article className='flex
                         flex-col
-                        w-10/12 
-                        py-3
-                        mx-auto">
+                        sm:w-10/12
+                       '>
 
-      <div className="flex flex-row items-center">
-          <div className="pl-0">
-            {icon}
-          </div>
-          <h1 className="pl-2
-                         text-bold
+      <div className='flex 
+                      flex-row 
+                      items-center
+                      pl-3.5
+                     '>
+          {icon}
+          <h1 className='pl-1
+                         font-bold
                          text-2xl
-                        ">{heading}</h1>
+                         text-rose-600
+                         opacity-95
+                        '>
+            {heading}
+          </h1>
       </div>
-      <p className="pt-3 pl-3 md:pr-2 lg:pr-20  text-left font-light">{body}</p>
+      <p className='text-left
+                    text-lg
+                  text-slate-600
+                    px-7
+                    pt-2
+                    pb-10
+                   '>
+        {body}
+      </p>
     </article>
   );
 }

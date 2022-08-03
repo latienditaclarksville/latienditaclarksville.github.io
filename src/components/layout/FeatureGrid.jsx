@@ -2,21 +2,25 @@ import React from 'react'
 import FeatureBlock from '../blocks/FeatureBlock';
 
 const FeatureGrid = (props) => {
- const { numCols,
+ const {  numCols,
           numRows, 
           gapX,
           gapY,
           contents } = props;
 
   return (
-    <div className={`grid 
-                     grid-cols-${numCols} 
-                     grid-rows-${numRows}
-                     gap-x-${gapX}
-                     gap-y-${gapY}
-                     lg:w-10/12
-                     lg:mx-auto
-                     `}           
+    <div className={`flex
+                     flex-col
+                     items-center
+                     justify-evenly
+                     sm:grid
+                     sm:grid-cols-${numCols}
+                     sm:grid-rows-${numRows}
+                     sm:gap-x-${gapX}
+                     sm:gap-y-${gapY}
+                     sm:w-10/12
+                     sm:mx-auto
+                     `}
     >
      {
        contents.map(feature => {
@@ -34,8 +38,3 @@ const FeatureGrid = (props) => {
 }
 
 export default FeatureGrid;
-
-// grid-cols-${numCols}
-//                      grid-rows-${numRows}
-//                      gap-x-${gapX}
-//                      gap-y-${gapY}

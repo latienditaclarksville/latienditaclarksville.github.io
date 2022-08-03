@@ -7,18 +7,49 @@ import { BiPhoneOutgoing,
 const IconList = () => {
   return (
     <ul>
-      <li className='flex flex-row justify-left align-center'>
-        <BiPhoneOutgoing size={24} className='my-auto'/>
-        <small className='pl-3 md:text-md lg:text-lg'>(931) 278-9303</small>
+      <li className='flex 
+                     flex-row 
+                     justify-left 
+                     align-center
+                     py-2
+                    '>
+        <BiPhoneOutgoing size={24}
+                         className='my-auto
+                                   '/>
+        <p className='pl-3
+                      text-base
+                     '>
+          (931) 278-9303
+        </p>
       </li>
-      <li className='flex flex-row'>
-        <BiMailSend size={24} className='my-auto'/>
-        <small className='pl-3 md:text-md lg:text-lg'>Franciscoh.2000@icloud.com</small>
+
+      <li className='flex 
+                     flex-row 
+                     py-2
+                    '>
+        <BiMailSend size={24} 
+                    className='my-auto
+                              '/>
+        <p className='pl-3 
+                      text-base
+                     '>
+          Franciscoh.2000@icloud.com
+        </p>
       </li>
-      <li className='flex flex-row'>
-        <BiMapPin size={24} className='my-auto'/>
-        <small className='pl-3 md:text-md lg:text-lg'>3862 Trenton Rd Ste. C<br/>
-        Clarksville, TN 37040</small>
+
+      <li className='flex 
+                     flex-row
+                     py-2
+                    '>
+        <BiMapPin size={24} 
+                  className='my-auto
+                            '/>
+        <p className='pl-3 
+                      text-base
+                     '>
+         3862 Trenton Rd Ste. C<br/>
+         Clarksville, TN 37040
+        </p>
       </li>
     </ul>
   );
