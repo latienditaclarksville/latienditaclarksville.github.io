@@ -8,7 +8,7 @@ const PaymentIcon = (props) => {
                             hover:scale-125
                             hover:text-zinc-50
                             text-zinc-50
-                            md:text-[#a6adba]
+                            xl:text-[#a6adba]
                             transition
                             duration-150
                             ease-in-out

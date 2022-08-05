@@ -23,7 +23,8 @@ const PaymentBar = () => {
   return (
     <aside className='flex 
                       flex-row 
-                      gap-x-3.5'>
+                      gap-x-3.5
+                     '>
       {
         iconComponentArray.map(icon => {
           return (

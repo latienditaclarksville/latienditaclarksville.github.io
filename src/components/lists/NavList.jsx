@@ -12,7 +12,9 @@ const NavList = () => {
 
   return (
     <div>
-      <ul className='flex flex-col'>
+      <ul className='flex 
+                     flex-col
+                    '>
         {
           navLinkTitles.map(link => {
             const { linkTarget, linkText } = link;
@@ -23,7 +25,9 @@ const NavList = () => {
                                sm:text-lg
                                underline-offset-4
                              decoration-rose-300
-                               '>
+                               py-1.5
+                               text-left
+                              '>
                 {linkText}
               </Link>
             );

@@ -2,8 +2,20 @@ import React from 'react';
 
 const Copyright = () => {
   return (
-      <p className='font-thin'><span className='font-normal'>La Tiendita. &copy;</span><br/>
-        Providing autnentic<br/><span className='underline underline-offset-2 decoration-rose-300'>Latino culture</span> since 2022.</p>
+      <p className='font-thin'>
+          <span className='font-bold
+                           text-zinc-50
+                          '>
+            La Tiendita. &copy;
+          </span>
+          <br/>
+        Providing authentic<br/>
+        <span className='underline 
+                         underline-offset-4 
+                        decoration-rose-300
+                         text-base-50'>
+        Latino culture 
+        </span> since 2022.</p>
   );
 }
 

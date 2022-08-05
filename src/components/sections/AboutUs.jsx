@@ -11,12 +11,16 @@ const AboutUs = () => {
       <div className='flex
                       flex-col
                       items-center
-                      sm:flex-row
-                      sm:justify-between
-                      sm:w-11/12
-                      sm:mx-auto
+                      lg:flex-row
+                      lg:justify-between
+                      lg:w-11/12
+                      lg:mx-auto
+                      2xl:w-10/12
                       '>
-        <div className='sm:w-6/12
+        <div className='lg:w-6/12
+                        lg:pl-0
+                        xl:pl-10
+                        xl:pr-20
                        '>
           <TextBlock 
               heading={headingStr}
@@ -27,8 +31,9 @@ const AboutUs = () => {
              alt="A family eating dinner"
              className='pt-24
                         px-7
+                        md:px-1
                         pb-0
-                        sm:w-5/12
+                        lg:w-6/12
                        '/>
       </div>
     </section>

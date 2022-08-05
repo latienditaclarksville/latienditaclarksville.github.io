@@ -46,8 +46,12 @@ const photoAlbum = ([
 /* Need to Edit Breakpoints Later */
 const breakpoints = {
   default: 3,
-  1023: 2, 
-  640: 2,
+  1281: 3,
+  1280: 2,
+  700: 2,
+  641: 1,
+  640: 1,
+  600: 1,
   400: 1,
 };
 
@@ -59,6 +63,7 @@ const PhotoGallery = () => {
                         items-center
                       bg-emerald-800
                         py-14
+                        md:py-28
                        '>
 
       <h2 className='font-bold
@@ -66,6 +71,7 @@ const PhotoGallery = () => {
                      text-4xl
                      pt-0
                      pb-14
+                     md:pb-28
                     '>
          Look Around.
       </h2>

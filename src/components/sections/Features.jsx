@@ -43,15 +43,14 @@ const Features = () => {
                         bg-zinc-50
                         pt-0
                         pb-20
-                        '
-    >
+                       '>
       <h2 className='font-bold
                      text-4xl
                      text-center
                      text-rose-600
                      px-12
                      pt-0
-                     sm:pt-20 
+                     sm:pt-20
                      pb-20
                      sm:pb-32'>Why Shop With Us?</h2>
       <Grid

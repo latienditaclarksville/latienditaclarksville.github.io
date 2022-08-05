@@ -9,7 +9,7 @@ const Card = (props) => {
                         w-10/12
                         md:w-11/12
                         lg:w-96
-                        xl:w-96
+                        xl:w-80
                         shadow-xl
                         hover:shadow-2xl
                         duration-1.5
@@ -23,13 +23,13 @@ const Card = (props) => {
                       text-left
                       divide-y divide-solid
                     text-rose-600
-                    lg:text-slate-400
+                    xl:text-slate-400
                     hover:text-rose-600
                     divide-emerald-600
-                    lg:divide-emerald-300
+                    xl:divide-emerald-300
                     hover:divide-emerald-600
                     bg-zinc-50
-                    lg:bg-stone-50
+                    xl:bg-stone-50
                     hover:bg-zinc-50
                       hover:font-bold
                      '>

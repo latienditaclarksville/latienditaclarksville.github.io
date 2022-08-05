@@ -30,26 +30,31 @@ const Policy = () => {
              className='bg-zinc-50
                         pt-10
                         pb-20
-                      '>
+                        md:pb-32
+                       '>
 
       <div className='flex
                       flex-col
                       items-center
-                      sm:flex-row 
-                      sm:justify-between
-                      sm:mx-auto
-                      sm:w-11/12
+                      xl:flex-row 
+                      xl:justify-between
+                      xl:mx-auto
+                      xl:w-11/12
+                      2xl:w-10/12
                     '>
 
-          <div className='sm:grid
-                          sm:grid-cols-2
-                          sm:gird-rows-2
-                          sm:gap-8
+          <div className='md:grid 
+                          md:grid-cols-2 
+                          md:grid-rows-2
+                          md:gap-2
+                          lg:gap-0
+                          md:w-10/12
                          '>
             {
               data.map(data => {
                 return (
                   <div className='py-8
+                                  md:py-3
                                   '>
                     <Card heading={data.heading}
                           body={data.body}
@@ -61,8 +66,10 @@ const Policy = () => {
           </div>
           <div className='pb-10
                           order-first
-                          md:order-last
-                          sm:w-6/12
+                          lg:pr-10
+                          xl:pl-20
+                          xl:order-last
+                          xl:w-8/12
                          '>
             <TextBlock 
                 heading={headingStr}

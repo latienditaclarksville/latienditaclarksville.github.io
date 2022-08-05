@@ -13,15 +13,15 @@ const FeatureGrid = (props) => {
                      flex-col
                      items-center
                      justify-evenly
-                     sm:grid
-                     sm:grid-cols-${numCols}
-                     sm:grid-rows-${numRows}
-                     sm:gap-x-${gapX}
-                     sm:gap-y-${gapY}
-                     sm:w-10/12
-                     sm:mx-auto
-                     `}
-    >
+                     md:grid
+                     md:grid-cols-${numCols}
+                     md:grid-rows-${numRows}
+                     md:gap-x-${gapX}
+                     md:gap-y-${gapY}
+                     md:w-10/12
+                     md:mx-auto
+                     2xl:w-9/12
+                    `}>
      {
        contents.map(feature => {
           return (

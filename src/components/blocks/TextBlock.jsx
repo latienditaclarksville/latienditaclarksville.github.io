@@ -5,21 +5,30 @@ const TextBlock = (props) => {
 
   return (
     <article className='flex 
-                        flex-col'>
+                        flex-col
+                        px-7
+                        sm:px-10
+                        md:px-10
+                        xl:px-0
+                       '>
                           
       <h2 className='font-bold 
                      text-5xl
                    text-rose-600
-                     text-center
-                     sm:text-left
+                     text-left
                      pt-0
-                     pb-5
+                     pb-9
+                     lg:pl-10
+                     xl:pl-0
                     '>{heading}</h2>
 
       <p className='text-left
                     text-lg
-                    px-7
-                    sm:pr-32
+                    sm:px-2
+                    md:px-10
+                    lg:pl-10
+                    xl:pl-0
+                    xl:pr-0
                     text-slate-600
                     '>{body}</p>
     </article>

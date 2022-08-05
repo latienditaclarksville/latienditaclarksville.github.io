@@ -7,28 +7,93 @@ import Copyright from '../Copyright';
 
 const Footer = () => {
   return (
-    <section>
-      <footer class="md:flex md:flex-row md:justify-between sm:text-lg p-10 bg-base-200">
-        <div className='flex flex-col items-left border py-5 md:auto'>
-          <h3 className='footer-title'>Contact Info</h3>
+    <section className='bg-emerald-800'>
+      <footer className='text-lg
+                         flex 
+                         flex-col
+                         sm:flex-row
+                         sm:flex-wrap
+                         sm:justify-around
+                         sm:items-top
+                         md:flex-row
+                         md:justify-around
+                         md:flex-wrap
+                         py-10
+                         px-7
+                         sm:px-20
+                        '>
+
+        <div className='flex 
+                        flex-col
+                        items-left
+                        py-5
+                        text-left
+                        md:pr-0
+                        lg:pr-32
+                        lg:order-first
+                       '>
+          <h3 className='footer-title 
+                       text-zinc-50 
+                         opacity-95
+                        '>
+            Contact Info
+          </h3>
           <IconList/>
         </div> 
-        <div className='flex flex-col items-left border py-5 md:w-auto'>
-          <h3 className='footer-title'>Where To?</h3>
+
+        <div className='flex 
+                        flex-col
+                        items-left
+                        py-5
+                        order-first
+                        md:pl-5
+                        lg:pr-56
+                       '>
+          <h3 className='footer-title 
+                       text-zinc-50 
+                         opacity-95
+                        '>
+            Where To?
+          </h3>
           <NavList title='Where to?'/>
         </div> 
-        <div className='py-3'>
+
+        <div className='py-3
+                        mx-auto
+                        sm:py-20
+                        lg:pl-20
+                       '>
           <GMap/>
         </div>
-      </footer> 
-    <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-      <div class="items-center grid-flow-col">
-        <Copyright/>
-      </div> 
-      <div class="md:place-self-center md:justify-self-end  sm:pr-0 md:pr-4">
-        <PaymentBar />
-      </div>
-    </footer>
+      </footer>
+
+      <footer className='footer
+                         flex
+                         flex-col
+                         items-center
+                         md:flex-row
+                         md:justify-around
+                         lg:justify-between
+                         md:items-center
+                         px-10
+                         md:px-0
+                         lg:px-20
+                         py-4
+                         
+                        '>
+        <div className='mx-auto
+                        md:mx-0
+                        text-center
+                        md:text-left
+                        lg:place-self-start
+                       '>
+          <Copyright/>
+        </div> 
+        <div className='
+                       '>
+          <PaymentBar />
+        </div>
+      </footer>
   </section>
   );
 }

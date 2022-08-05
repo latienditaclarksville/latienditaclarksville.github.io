@@ -46,8 +46,8 @@ const Navbar = () => {
                                 underline-offset-4
                                 ">La Tiendita</p>
                 </div>
-                <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                <div className="hidden sm:block ">
+                  <div className="flex sm:justify-center sm:pl-10 space-x-4">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}

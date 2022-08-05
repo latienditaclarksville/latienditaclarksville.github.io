@@ -29,32 +29,41 @@ const Faq = () => {
     <section id='FAQ'
              className='bg-zinc-50
                         py-20
+                        md:py-36
                        '>
 
       <div className='flex 
                       flex-col
                       items-center
-                      sm:flex-row
-                      sm:justify-between
-                      sm:mx-auto
-                      sm:w-11/12'>
+                      xl:flex-row
+                      xl:justify-between
+                      xl:mx-auto
+                      xl:w-11/12
+                      2xl:w-10/12
+                    '>
         
         <div className='pb-10
-                        sm:w-6/12'>
+                        lg:px-10
+                        xl:w-8/12
+                        xl:pr-20
+                       '>
           <TextBlock 
             heading={headerStr}
             body={bodyStr}
           />
         </div>
-        <div className='sm:grid 
-                        sm:grid-cols-2 
-                        sm:grid-rows-2
-                        sm:gap-8
-                        '>
+        <div className='md:grid 
+                        md:grid-cols-2 
+                        md:grid-rows-2
+                        md:gap-2
+                        md:w-10/12
+                        lg:gap-0
+                       '>
           {
           data.map(data => {
             return (
               <div className='py-8
+                              md:py-3
                              '>
                 <Card heading={data.heading}
                       body={data.body}

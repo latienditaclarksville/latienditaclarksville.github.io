@@ -6,13 +6,16 @@ const FeatureBlock = (props) => {
   return (
     <article className='flex
                         flex-col
-                        sm:w-10/12
+                        sm:px-7
+                        md:px-0
+                        2xl:px-10
                        '>
 
       <div className='flex 
                       flex-row 
                       items-center
                       pl-3.5
+                      
                      '>
           {icon}
           <h1 className='pl-1
@@ -30,6 +33,7 @@ const FeatureBlock = (props) => {
                     px-7
                     pt-2
                     pb-10
+                    
                    '>
         {body}
       </p>

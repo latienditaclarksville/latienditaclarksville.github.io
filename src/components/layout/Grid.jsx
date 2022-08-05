@@ -9,7 +9,7 @@ const Grid = (props) => {
           contents, } = props;
 
   return (
-    <div className="border-emerald-300 items-center">
+    <div className=''>
       <FeatureGrid
         numCols={numCols}
         numRows={numRows}
