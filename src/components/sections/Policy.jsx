@@ -47,8 +47,8 @@ const Policy = () => {
                           md:grid-cols-2 
                           md:grid-rows-2
                           md:gap-2
-                          lg:gap-0
                           md:w-10/12
+                          lg:w-full
                          '>
             {
               data.map(data => {
@@ -66,7 +66,7 @@ const Policy = () => {
           </div>
           <div className='pb-10
                           order-first
-                          lg:pr-10
+                          lg:px-10
                           xl:pl-20
                           xl:order-last
                           xl:w-8/12

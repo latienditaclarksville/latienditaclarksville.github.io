@@ -57,7 +57,7 @@ const Faq = () => {
                         md:grid-rows-2
                         md:gap-2
                         md:w-10/12
-                        lg:gap-0
+                        lg:w-full
                        '>
           {
           data.map(data => {
