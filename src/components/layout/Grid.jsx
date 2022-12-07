@@ -1,23 +1,6 @@
-import React from 'react';
-import FeatureGrid from '../layout/FeatureGrid';
-
-const Grid = (props) => {
-  const { numCols, 
-          numRows, 
-          gapX, 
-          gapY, 
-          contents, } = props;
-
+const Grid = () => {
   return (
-    <div className=''>
-      <FeatureGrid
-        numCols={numCols}
-        numRows={numRows}
-        gapX={gapX}
-        gapY={gapY}
-        contents = {contents}
-      /> 
-    </div>
+    <div>Grid</div>
   );
 }
 
